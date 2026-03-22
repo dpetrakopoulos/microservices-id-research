@@ -1,0 +1,151 @@
+[ {
+  "fileName" : "BaseEntity.java",
+  "className" : "BaseEntity",
+  "packageName" : "org.springframework.samples.petclinic.model",
+  "tokens" : [ "base", "entity", "get", "id", "set", "id", "id", "is", "new", "id" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "NamedEntity.java",
+  "className" : "NamedEntity",
+  "packageName" : "org.springframework.samples.petclinic.model",
+  "tokens" : [ "named", "entity", "get", "name", "set", "name", "name", "to", "string", "name" ],
+  "methodCalls" : [ "NamedEntity.getName" ]
+}, {
+  "fileName" : "Person.java",
+  "className" : "Person",
+  "packageName" : "org.springframework.samples.petclinic.model",
+  "tokens" : [ "person", "get", "first", "name", "set", "first", "name", "first", "name", "get", "last", "name", "set", "last", "name", "last", "name", "first", "name", "last", "name" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "Owner.java",
+  "className" : "Owner",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "owner", "get", "address", "set", "address", "address", "get", "city", "set", "city", "city", "get", "telephone", "set", "telephone", "telephone", "get", "pets", "add", "pet", "pet", "get", "pet", "name", "get", "pet", "id", "get", "pet", "name", "ignore", "new", "to", "string", "add", "visit", "pet", "id", "visit", "address", "city", "telephone", "pets" ],
+  "methodCalls" : [ "NamedEntity.getName", "Person.getLastName", "BaseEntity.getId", "Objects.equals", "Person.getFirstName", "Owner.getPet", "String.equalsIgnoreCase", "BaseEntity.isNew", "Owner.getPets", "List.add", "Pet.addVisit" ]
+}, {
+  "fileName" : "OwnerController.java",
+  "className" : "OwnerController",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "owner", "controller", "set", "allowed", "fields", "data", "binder", "find", "owner", "owner", "id", "init", "creation", "form", "process", "creation", "form", "owner", "result", "redirect", "attributes", "init", "find", "form", "process", "find", "form", "page", "owner", "result", "model", "add", "pagination", "model", "page", "model", "paginated", "find", "paginated", "for", "owners", "last", "name", "page", "lastname", "init", "update", "owner", "form", "process", "update", "owner", "form", "owner", "result", "owner", "id", "redirect", "attributes", "show", "owner", "owner", "id", "s_", "r_", "e_", "r_", "e_", "owners" ],
+  "methodCalls" : [ "Person.getLastName", "BaseEntity.getId", "Objects.equals", "OwnerController.findPaginatedForOwnersLastName", "Optional.orElseThrow", "OwnerRepository.findById", "BaseEntity.setId" ]
+}, {
+  "fileName" : "OwnerRepository.java",
+  "className" : "OwnerRepository",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "owner", "repository", "find", "by", "last", "name", "starting", "with", "last", "name", "pageable", "find", "by", "id", "id" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "Pet.java",
+  "className" : "Pet",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "pet", "set", "birth", "date", "birth", "date", "get", "birth", "date", "get", "type", "set", "type", "type", "get", "visits", "add", "visit", "visit", "birth", "date", "type", "visits" ],
+  "methodCalls" : [ "Pet.getVisits", "Collection.add" ]
+}, {
+  "fileName" : "PetController.java",
+  "className" : "PetController",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "pet", "controller", "populate", "pet", "types", "find", "owner", "owner", "id", "find", "pet", "owner", "id", "pet", "id", "init", "owner", "binder", "data", "binder", "init", "pet", "binder", "data", "binder", "init", "creation", "form", "owner", "model", "process", "creation", "form", "owner", "pet", "result", "redirect", "attributes", "init", "update", "form", "process", "update", "form", "owner", "pet", "result", "redirect", "attributes", "update", "pet", "details", "owner", "pet", "s_", "s_", "e_", "r_", "e_", "owners", "types" ],
+  "methodCalls" : [ "Objects.equals", "LocalDate.isAfter", "Pet.setBirthDate", "Pet.getType", "NamedEntity.getName", "BaseEntity.getId", "NamedEntity.setName", "Owner.addPet", "LocalDate.now", "Optional.orElseThrow", "PetTypeRepository.findPetTypes", "Pet.setType", "Owner.getPet", "Pet.getBirthDate", "PetController.updatePetDetails", "BaseEntity.isNew", "OwnerRepository.findById" ]
+}, {
+  "fileName" : "PetType.java",
+  "className" : "PetType",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "pet", "type" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "PetTypeFormatter.java",
+  "className" : "PetTypeFormatter",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "pet", "type", "formatter", "print", "pet", "type", "locale", "parse", "text", "locale", "types" ],
+  "methodCalls" : [ "NamedEntity.getName", "Objects.equals", "PetTypeRepository.findPetTypes" ]
+}, {
+  "fileName" : "PetTypeRepository.java",
+  "className" : "PetTypeRepository",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "pet", "type", "repository", "find", "pet", "types" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "PetValidator.java",
+  "className" : "PetValidator",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "pet", "validator", "validate", "obj", "errors", "supports", "clazz" ],
+  "methodCalls" : [ "NamedEntity.getName", "Class.isAssignableFrom", "Pet.getBirthDate", "BaseEntity.isNew", "Pet.getType" ]
+}, {
+  "fileName" : "Visit.java",
+  "className" : "Visit",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "visit", "get", "date", "set", "date", "date", "get", "description", "set", "description", "description", "date", "description" ],
+  "methodCalls" : [ "LocalDate.now" ]
+}, {
+  "fileName" : "VisitController.java",
+  "className" : "VisitController",
+  "packageName" : "org.springframework.samples.petclinic.owner",
+  "tokens" : [ "visit", "controller", "set", "allowed", "fields", "data", "binder", "load", "pet", "with", "visit", "owner", "id", "pet", "id", "model", "init", "new", "visit", "form", "process", "new", "visit", "form", "owner", "pet", "id", "visit", "result", "redirect", "attributes", "owners" ],
+  "methodCalls" : [ "Optional.orElseThrow", "Owner.getPet", "Owner.addVisit", "Map.put", "OwnerRepository.findById", "Pet.addVisit" ]
+}, {
+  "fileName" : "PetClinicApplication.java",
+  "className" : "PetClinicApplication",
+  "packageName" : "org.springframework.samples.petclinic",
+  "tokens" : [ "pet", "clinic", "application", "main", "args" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "PetClinicRuntimeHints.java",
+  "className" : "PetClinicRuntimeHints",
+  "packageName" : "org.springframework.samples.petclinic",
+  "tokens" : [ "pet", "clinic", "runtime", "hints", "register", "hints", "hints", "class", "loader" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "CacheConfiguration.java",
+  "className" : "CacheConfiguration",
+  "packageName" : "org.springframework.samples.petclinic.system",
+  "tokens" : [ "cache", "configuration", "petclinic", "cache", "configuration", "customizer", "cache", "configuration" ],
+  "methodCalls" : [ "CacheConfiguration.cacheConfiguration" ]
+}, {
+  "fileName" : "CrashController.java",
+  "className" : "CrashController",
+  "packageName" : "org.springframework.samples.petclinic.system",
+  "tokens" : [ "crash", "controller", "trigger", "exception" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "WebConfiguration.java",
+  "className" : "WebConfiguration",
+  "packageName" : "org.springframework.samples.petclinic.system",
+  "tokens" : [ "web", "configuration", "locale", "resolver", "locale", "change", "interceptor", "add", "interceptors", "registry" ],
+  "methodCalls" : [ "WebConfiguration.localeChangeInterceptor" ]
+}, {
+  "fileName" : "WelcomeController.java",
+  "className" : "WelcomeController",
+  "packageName" : "org.springframework.samples.petclinic.system",
+  "tokens" : [ "welcome", "controller", "welcome" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "Specialty.java",
+  "className" : "Specialty",
+  "packageName" : "org.springframework.samples.petclinic.vet",
+  "tokens" : [ "specialty" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "Vet.java",
+  "className" : "Vet",
+  "packageName" : "org.springframework.samples.petclinic.vet",
+  "tokens" : [ "vet", "get", "specialties", "internal", "get", "specialties", "get", "nr", "of", "specialties", "add", "specialty", "specialty", "specialties" ],
+  "methodCalls" : [ "Comparator.comparing", "Set.add", "Collectors.toList", "Vet.getSpecialtiesInternal", "Set.size", "Collection.stream", "Stream.sorted", "Stream.collect" ]
+}, {
+  "fileName" : "VetController.java",
+  "className" : "VetController",
+  "packageName" : "org.springframework.samples.petclinic.vet",
+  "tokens" : [ "vet", "controller", "show", "vet", "list", "page", "model", "add", "pagination", "model", "page", "paginated", "model", "find", "paginated", "page", "show", "resources", "vet", "list", "vet", "repository" ],
+  "methodCalls" : [ "VetController.findPaginated", "Vets.getVetList" ]
+}, {
+  "fileName" : "VetRepository.java",
+  "className" : "VetRepository",
+  "packageName" : "org.springframework.samples.petclinic.vet",
+  "tokens" : [ "vet", "repository", "find", "all", "find", "all", "pageable" ],
+  "methodCalls" : [ ]
+}, {
+  "fileName" : "Vets.java",
+  "className" : "Vets",
+  "packageName" : "org.springframework.samples.petclinic.vet",
+  "tokens" : [ "vets", "get", "vet", "list", "vets" ],
+  "methodCalls" : [ ]
+} ]
