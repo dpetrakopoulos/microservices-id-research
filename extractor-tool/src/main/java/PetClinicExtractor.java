@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 public class PetClinicExtractor {
 
     private static final String SOURCE_ROOT = "../spring-petclinic/src/main/java";
-    private static final String OUTPUT_FILE = "petclinic_data.json";
+    private static final String OUTPUT_FILE = "../data/petclinic_data.json";
 
     public static void main(String[] args) throws IOException {
         System.out.println("Starting extraction from: " + SOURCE_ROOT);
@@ -98,7 +98,7 @@ public class PetClinicExtractor {
                             entry.methodCalls.add(targetClass + "." + resolved.getName());
                         }
                     } catch (Exception e) {
-                        // Symbol solver might fail on some libs; safe to ignore for research prototype
+                        
                     }
                 }
             }, null);
