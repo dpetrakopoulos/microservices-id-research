@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 public class PetClinicExtractor {
 
-    private static final String SOURCE_ROOT = "../spring-petclinic/src/main/java";//"C:\\MSc Software Architecture\\Project\\spring-petclinic\\src\\main\\java";
+    private static final String SOURCE_ROOT = "../spring-petclinic/src/main/java";
     private static final String OUTPUT_FILE = "petclinic_data.json";
 
     public static void main(String[] args) throws IOException {
