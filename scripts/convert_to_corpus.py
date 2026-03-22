@@ -8,10 +8,10 @@ from nltk.corpus import stopwords
 nltk.download('stopwords')
 
 # --- CONFIGURATION ---
-INPUT_FILE = 'petclinic_data.json'
-#OUTPUT_DICTIONARY = 'dictionary.gensim'
-#OUTPUT_CORPUS = 'corpus.pkl'
-#OUTPUT_FILENAMES = 'filenames.pkl'
+INPUT_FILE = '../data/petclinic_data.json'
+OUTPUT_DICTIONARY = '../data/dictionary_b.gensim'
+OUTPUT_CORPUS = '../data/corpus_b.pkl'
+OUTPUT_FILENAMES = '../data/filenames_b.pkl'
 
 #Corpus A
 OUTPUT_DICTIONARY = 'dictionary_b.gensim'  # Changed to _a

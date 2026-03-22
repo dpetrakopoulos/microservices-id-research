@@ -6,9 +6,9 @@ import pandas as pd
 # --- CONFIGURATION (Toggle this between 'a' and 'b') ---
 RUN_VERSION = 'b'  # CHANGE THIS TO 'b' WHEN RUNNING EXPERIMENT 2
 
-DICTIONARY_FILE = f'dictionary_{RUN_VERSION}.gensim'
-CORPUS_FILE = f'corpus_{RUN_VERSION}.pkl'
-OUTPUT_MODEL = f'hdp_tuned_{RUN_VERSION}.model'
+DICTIONARY_FILE = f'../data/dictionary_{RUN_VERSION}.gensim'
+CORPUS_FILE = f'../data/corpus_{RUN_VERSION}.pkl'
+OUTPUT_MODEL = f'../data/hdp_tuned_{RUN_VERSION}.model'
 
 def main():
     print(f"Loading data for Corpus {RUN_VERSION.upper()}...")

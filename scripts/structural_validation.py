@@ -4,10 +4,10 @@ import pandas as pd
 from gensim import models
 
 # --- CONFIGURATION ---
-MODEL_FILE = 'hdp_tuned_b.model'
-CORPUS_FILE = 'corpus_b.pkl'
-FILENAMES_FILE = 'filenames_b.pkl'
-JSON_DATA_FILE = 'petclinic_data.json'
+MODEL_FILE = '../data/hdp_tuned_b.model'
+CORPUS_FILE = '../data/corpus_b.pkl'
+FILENAMES_FILE = '../data/filenames_b.pkl'
+JSON_DATA_FILE = '../data/petclinic_data.json'
 
 
 def get_domain_label(topic_string):

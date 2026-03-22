@@ -6,8 +6,8 @@ from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
 
 # --- CONFIGURATION ---
-JSON_DATA_FILE = 'petclinic_data.json'
-ASSIGNMENTS_FILE = 'microservice_assignments.csv'
+JSON_DATA_FILE = '../data/petclinic_data.json'
+ASSIGNMENTS_FILE = '../data/microservice_assignments.csv'
 MODEL_NAME = "microsoft/codebert-base"
 
 
