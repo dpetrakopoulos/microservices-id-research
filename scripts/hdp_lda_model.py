@@ -32,7 +32,7 @@ def main():
         random_state=42
     )
 
-    # CALCULATE COHERENCE SCORE (Crucial for Chapter 5 Results!)
+    # CALCULATE COHERENCE SCORE 
     print("\nCalculating Coherence Score...")
     cm = CoherenceModel(model=hdp_tuned, corpus=corpus, dictionary=dictionary, coherence='u_mass')
     coherence_score = cm.get_coherence()
