@@ -29,7 +29,6 @@ JAVA_KEYWORDS = {
 }
 
 # 2. FRAMEWORK NOISE (Keep strict Spring MVC removal, but SAVE domain words)
-# removed 'owners', 'date', 'type', 'name' from this list so they survive.
 DOMAIN_NOISE = {
     'base', 'entity', 'model', 'dto', 'dao', 'repository', 'controller',
     'service', 'impl', 'util', 'helper', 'configuration', 'application',
@@ -93,7 +92,6 @@ def main():
     # 1. Build Dictionary
     dictionary = corpora.Dictionary(processed_docs)
 
-    # --- FIX: Changed no_below to 1 ---
     # We want to keep words even if they only appear in 1 file
     # (crucial for small datasets like PetClinic)
     dictionary.filter_extremes(no_below=1, no_above=1.0)
