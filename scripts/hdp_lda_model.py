@@ -22,7 +22,7 @@ def main():
 
     print(f"\n--- EXPERIMENT TASK: TUNING HDP-LDA (Corpus {RUN_VERSION.upper()}) ---")
 
-    # TUNING PARAMETERS (The "Address Limitations" part)
+    # TUNING PARAMETERS
     hdp_tuned = models.HdpModel(
         corpus=corpus,
         id2word=dictionary,
