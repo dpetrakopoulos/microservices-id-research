@@ -5,7 +5,7 @@ This repository contains the experimental framework for identifying microservice
 ## 📂 Repository Structure
 * `extractor-tool/`: Java 11 Maven tool for AST parsing and call graph generation.
 * `spring-petclinic/`: The subject monolithic system (Source: [Spring Framework GitHub](https://github.com/spring-projects/spring-petclinic)).
-* `data/`: Contains `petclinic_data.json` and the serialized corpora (`.pkl`) for Experiments 1 & 2.
+* `data/`: Contains `petclinic_data.json` and the serialized datasets (`.pkl`) for Experiments 1 & 2.
 * `scripts/`: Python suite for HDP-LDA modeling and architectural validation.
 
 ---
