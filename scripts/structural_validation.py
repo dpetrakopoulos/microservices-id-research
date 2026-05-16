@@ -62,7 +62,7 @@ def main():
         topic_probs.sort(key=lambda x: x[1], reverse=True)
         dominant_topic_id = topic_probs[0][0]
 
-        # Get the words for this topic and apply your label heuristic
+        # Get the words for this topic and apply label heuristic
         topic_words = hdp_model.print_topic(dominant_topic_id)
         domain_label = get_domain_label(topic_words)
 
@@ -102,7 +102,7 @@ def main():
             callee_domain = file_to_domain.get(callee_file)
 
             # 1. Ignore calls to external Java/Spring libraries (e.g., 'Objects.equals')
-            # 2. Ignore calls to technical/infra files in our own project
+            # 2. Ignore calls to technical/infra files in project
             if not callee_domain or callee_domain == "Infra_Abstraction":
                 continue
 
